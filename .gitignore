@@ -1,0 +1,8 @@
+atom/storage/*
+!.gitkeep
+.ruby-versionstrage
+strage
+atom/.node-gyp
+atom/gist-it.token
+atom/compile-cache
+.cask
