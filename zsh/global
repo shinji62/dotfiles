@@ -73,6 +73,12 @@ if [[ -f ~/cf-gwenn/bosh/bin/bosh ]]; then
        export PATH=$HOME/cf-gwenn/bosh/bin:$PATH
 fi
 
+#bosh-lite
+
+export no_proxy=192.168.50.4
+export NO_PROXY=192.168.50.4
+
+
 # ------------------------------------
 # z
 # ------------------------------------

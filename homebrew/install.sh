@@ -22,6 +22,8 @@ brew tap homebrew/versions
 brew tap homebrew/binary     
 brew tap thoughtbot/formulae
 brew tap caskroom/fonts
+brew tap xoebus/homebrew-cloudfoundry
+
 
 packages=(
 
@@ -80,7 +82,10 @@ packages=(
 
     #Database
     mysql
-    postgres          
+    postgres    
+
+    #CF
+    spiff      
 )
 
 echo "installing binaries..."
