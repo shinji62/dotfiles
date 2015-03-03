@@ -60,7 +60,7 @@ setopt correct
 # Oh-my-zsh settings
 # ------------------------------------
 ZSH=~/.oh-my-zsh
-ZSH_THEME="beer"
+ZSH_THEME="random-emoji"
 plugins=(git ruby gem zsh-syntax-highlighting)
 
 [ -d ~/.oh-my-zsh ] && source ~/.oh-my-zsh/oh-my-zsh.sh
