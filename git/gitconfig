@@ -2,7 +2,7 @@
   path = ~/.gitconfig.local
 
 [user]
-  name = shinji62
+  name = Etourneau Gwenn
   email = gwenn.etourneau@gmail.com
 
 [credential]
@@ -83,7 +83,7 @@
   rr     = !git ls-files -z --deleted | xargs -0 git rm
   alias  = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ => \\2/' | sort
   ignore = "!ignore () { echo $1 >> .gitignore;}; ignore"
-  github = !git remote add origin https://github.com/tcnksm/$1.git && git push -u origin master
+  github = !git remote add origin https://github.com/shinji62/$1.git && git push -u origin master
   now    = rev-parse --abbrev-ref HEAD
 
 [filter "media"]
