@@ -68,12 +68,16 @@ alias tmux-paste='pbpaste | tmux load-buffer - && tmux paste-buffer'
 # ------------------------------------
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# ------------------------------------
-# Sakura VPS
-# ------------------------------------
-alias sakura="ssh -p 61203 taichi@133.242.140.185"
 
 # ------------------------------------
 # Vagrant
 # ------------------------------------
 alias vs='vagrant global-status'
+
+
+# --------------------------------------
+# CF cli
+# --------------------------------------
+alias cfll='cf login -a https://api.10.244.0.34.xip.io -u admin -o GWENN -s GWENN-SPACE --skip-ssl-validation -p admin'
+
+
