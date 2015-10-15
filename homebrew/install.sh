@@ -22,6 +22,7 @@ brew tap homebrew/versions
 brew tap homebrew/binary     
 brew tap thoughtbot/formulae
 brew tap caskroom/fonts
+brew tap caskroom/versions
 brew tap xoebus/homebrew-cloudfoundry
 
 
@@ -86,6 +87,9 @@ packages=(
 
     #CF
     spiff      
+
+    #Java
+    jenv
 )
 
 echo "installing binaries..."
@@ -127,6 +131,8 @@ brew cask install --appdir="/Applications" ${apps[@]}
 # We need to link it
 brew cask alfred link
 
+
+
 # fonts
 fonts=(
     font-m-plus
@@ -139,3 +145,10 @@ fonts=(
 # install fonts
 echo "installing fonts..."
 brew cask install ${fonts[@]}
+
+
+echo  "Installaling Java7"
+brew cask install java7
+
+
+

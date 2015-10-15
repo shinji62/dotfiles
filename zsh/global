@@ -38,10 +38,6 @@ fi
 # ------------------------------------
 # Go
 # ------------------------------------
-if [ -d ~/.gvm ]; then
-  source "$HOME/.gvm/scripts/gvm"
-  gvm use go1.4
-fi
 
 export GOPATH=${HOME}
 export PATH=$PATH:~/bin
@@ -49,6 +45,14 @@ export PATH=$PATH:~/bin
 # For godoc
 export GOROOT=`go env GOROOT`
 export PATH=$PATH:$GOROOT/bin
+
+
+
+if [ -d ~/.gvm ]; then
+  source "$HOME/.gvm/scripts/gvm"
+  gvm use 1.4
+fi
+
 
 # ------------------------------------
 # node.js
@@ -73,14 +77,27 @@ if [[ -f ~/cf-gwenn/bosh/bin/bosh ]]; then
        export PATH=$HOME/cf-gwenn/bosh/bin:$PATH
 fi
 
-if [[ -f ~/cf-gwenn/bosh-lite/bin/add-route ]]; then
-       sudo ~/cf-gwenn/bosh-lite/bin/add-route
-fi
 
 #bosh-lite
 export no_proxy=192.168.50.4
 export NO_PROXY=192.168.50.4
 
+
+
+
+# ------------------------------------
+# Composer
+# ------------------------------------
+if [ -d ~/.gvm ]; then
+export PATH=$HOME/.composer/vendor/bin:$PATH
+fi
+
+# ------------------------------------
+# jenv
+# ------------------------------------
+
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+export JENV_ROOT=/usr/local/opt/jenv
 
 # ------------------------------------
 # z

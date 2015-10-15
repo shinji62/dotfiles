@@ -61,7 +61,7 @@ setopt correct
 # ------------------------------------
 ZSH=~/.oh-my-zsh
 ZSH_THEME="random-emoji"
-plugins=(git ruby gem zsh-syntax-highlighting)
+plugins=(git ruby gem zsh-syntax-highlighting cf)
 
 [ -d ~/.oh-my-zsh ] && source ~/.oh-my-zsh/oh-my-zsh.sh
 
@@ -88,3 +88,8 @@ case "${OSTYPE}" in
 	  [ -f ~/.dotfiles/zsh/linux ] && source ~/.dotfiles/zsh/linux
 	;;
 esac
+
+[[ -s "/Users/etourg/.gvm/scripts/gvm" ]] && source "/Users/etourg/.gvm/scripts/gvm"
+
+export NVM_DIR="/Users/etourg/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -35,3 +35,22 @@ if [[ ! -d ~/.zjump ]]; then
     info "Install z"
     git clone https://github.com/rupa/z.git ~/.zjump
 fi
+
+
+if [[ ! -d ~/.oh-my-zsh/custom/plugins/cf ]]; then
+    info "Install CF Plugin"
+    pushd ~/.oh-my-zsh/custom/plugins
+    git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git cf
+    popd
+fi 
+
+if [[ ! -f ~/.oh-my-zsh/completions/hub/hub.zsh_completion ]]; then
+    info "Install Hub Completion"
+    mkdir -p ~/.oh-my-zsh/completions/hub
+    pushd ~/.oh-my-zsh/completions/
+    curl -fsSL https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion >> ~/.oh-my-zsh/completions/hub/hub.zsh_completion
+    popd
+fi 
+
+
+

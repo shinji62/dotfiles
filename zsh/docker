@@ -1,6 +1,9 @@
 # ------------------------------------
 # Docker
 # ------------------------------------
+#Kitematic env
+alias setkit='eval "$(docker-machine env default)" '
+
 # Get latest container ID
 alias dl="docker ps -l -q"
 

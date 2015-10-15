@@ -78,6 +78,13 @@ alias vs='vagrant global-status'
 # --------------------------------------
 # CF cli
 # --------------------------------------
-alias cfll='cf login -a https://api.10.244.0.34.xip.io -u admin -o GWENN -s GWENN-SPACE --skip-ssl-validation -p admin'
+alias cfllo='cf login -a https://api.10.244.0.34.xip.io -u admin -o GWENN -s GWENN-SPACE --skip-ssl-validation -p admin'
+
+alias cfll='cf login -a https://api.bosh-lite.com -u admin -o GWENN -s GWENN-SPACE --skip-ssl-validation -p admin'
+
+alias cflm='cf login -a https://api.local.micropcf.io -u admin -o "local.micropcf.io-org" -s GWENN --skip-ssl-validation -p admin'
+
+
+alias cflp='cf login -a https://api.run.pivotal.io '
 
 
