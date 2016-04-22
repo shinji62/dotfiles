@@ -84,6 +84,8 @@ alias cfll='cf login -a https://api.bosh-lite.com -u admin -o GWENN -s GWENN-SPA
 
 alias cflm='cf login -a https://api.local.micropcf.io -u admin -o "local.micropcf.io-org" -s GWENN --skip-ssl-validation -p admin'
 
+alias cfldev='cf login -a https://api.local.pcfdev.io -u admin -o "pcfdev-org" -s pcfdev-space --skip-ssl-validation -p admin'
+
 
 alias cflp='cf login -a https://api.run.pivotal.io '
 

@@ -50,7 +50,7 @@ export PATH=$PATH:$GOROOT/bin
 
 if [ -d ~/.gvm ]; then
   source "$HOME/.gvm/scripts/gvm"
-  gvm use 1.4
+  gvm use 1.6.2
 fi
 
 
@@ -96,8 +96,8 @@ fi
 # jenv
 # ------------------------------------
 
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-export JENV_ROOT=/usr/local/opt/jenv
+#if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+#export JENV_ROOT=/usr/local/opt/jenv
 
 # ------------------------------------
 # z

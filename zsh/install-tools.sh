@@ -44,6 +44,15 @@ if [[ ! -d ~/.oh-my-zsh/custom/plugins/cf ]]; then
     popd
 fi 
 
+
+if [[ ! -d ~/.oh-my-zsh/custom/plugins/fly ]]; then
+    info "Install Fly concourse Plugin"
+    pushd ~/.oh-my-zsh/custom/plugins
+    git clone https://github.com/sbodiu-pivotal/fly-zsh-autocomplete-plugin.git fly
+    popd
+fi 
+
+
 if [[ ! -f ~/.oh-my-zsh/completions/hub/hub.zsh_completion ]]; then
     info "Install Hub Completion"
     mkdir -p ~/.oh-my-zsh/completions/hub
@@ -51,6 +60,8 @@ if [[ ! -f ~/.oh-my-zsh/completions/hub/hub.zsh_completion ]]; then
     curl -fsSL https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion >> ~/.oh-my-zsh/completions/hub/hub.zsh_completion
     popd
 fi 
+
+
 
 
 
