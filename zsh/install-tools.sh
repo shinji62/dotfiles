@@ -17,19 +17,19 @@ unset https_proxy
 if [[ ! -d ~/.oh-my-zsh ]]; then
     info "Install zsh-syntax-highlighting"
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi 
+fi
 
 if [[ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]]; then
     info "Install zsh-syntax-highlighting"
     pushd ~/.oh-my-zsh/custom/plugins
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
     popd
-fi 
+fi
 
 if [[ ! -f ~/.oh-my-zsh/themes/beer.zsh-theme ]]; then
     info "Install oh-my-zsh-theme"
     curl -fsSL https://raw.github.com/shinji62/oh-my-zsh-beer-theme/master/random-emoji.zsh-theme >> ~/.oh-my-zsh/themes/random-emoji.zsh-theme
-fi 
+fi
 
 if [[ ! -d ~/.zjump ]]; then
     info "Install z"
@@ -42,15 +42,8 @@ if [[ ! -d ~/.oh-my-zsh/custom/plugins/cf ]]; then
     pushd ~/.oh-my-zsh/custom/plugins
     git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git cf
     popd
-fi 
+fi
 
-
-if [[ ! -d ~/.oh-my-zsh/custom/plugins/fly ]]; then
-    info "Install Fly concourse Plugin"
-    pushd ~/.oh-my-zsh/custom/plugins
-    git clone https://github.com/sbodiu-pivotal/fly-zsh-autocomplete-plugin.git fly
-    popd
-fi 
 
 
 if [[ ! -f ~/.oh-my-zsh/completions/hub/hub.zsh_completion ]]; then
@@ -59,9 +52,22 @@ if [[ ! -f ~/.oh-my-zsh/completions/hub/hub.zsh_completion ]]; then
     pushd ~/.oh-my-zsh/completions/
     curl -fsSL https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion >> ~/.oh-my-zsh/completions/hub/hub.zsh_completion
     popd
-fi 
+fi
 
 
+if [[ ! -f ~/.oh-my-zsh/custom/plugins/docker/ ]]; then
+    info "Install Docker completion"
+    mkdir -p ~/.oh-my-zsh/custom/plugins/docker/
+    pushd ~/.oh-my-zsh/custom/plugins
+    curl -fsSL https://raw.github.com/felixr/docker-zsh-completion/master/_docker >> ~/.oh-my-zsh/custom/plugins/docker/docker.zsh_completion
+    popd
+fi
 
 
-
+if [[ ! -f ~/.oh-my-zsh/custom/plugins/kubectl/ ]]; then
+    info "Install Kubectl completion"
+    mkdir -p ~/.oh-my-zsh/custom/plugins/kubectl/
+    pushd ~/.oh-my-zsh/custom/plugins
+    curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/plugins/kubectl/kubectl.plugin.zsh >> ~/.oh-my-zsh/custom/plugins/kubectl/kubectl.zsh_completion
+    popd
+fi
