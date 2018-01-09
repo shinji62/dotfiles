@@ -96,7 +96,7 @@ echo "installing binaries..."
 brew install ${packages[@]} && brew cleanup
 
 # Casks
-brew install caskroom/cask/brew-cask
+brew cask
 
 # Apps
 apps=(
