@@ -28,7 +28,7 @@ fi
 
 if [[ ! -f ~/.oh-my-zsh/themes/beer.zsh-theme ]]; then
     info "Install oh-my-zsh-theme"
-    curl -fsSL https://raw.github.com/shinji62/oh-my-zsh-beer-theme/master/random-emoji.zsh-theme >> ~/.oh-my-zsh/themes/random-emoji.zsh-theme
+    curl -fsSL https://raw.github.com/shinji62/oh-my-zsh-random-emoji-theme/master/random-emoji.zsh-theme >> ~/.oh-my-zsh/themes/random-emoji.zsh-theme
 fi
 
 if [[ ! -d ~/.zjump ]]; then
