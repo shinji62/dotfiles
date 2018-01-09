@@ -36,7 +36,7 @@ packages=(
 
     # recent versions of some OS X tools
     homebrew/dupes/grep
-    apple-gcc42
+    #apple-gcc42
     
     # Shell
     zsh
@@ -120,7 +120,7 @@ apps=(
     vagrant-manager
 
     # etc ...
-    google-drive
+    google-backup-and-sync
     flux
 )
 
