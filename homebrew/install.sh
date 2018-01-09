@@ -147,8 +147,8 @@ echo "installing fonts..."
 brew cask install ${fonts[@]}
 
 
-echo  "Installaling Java7"
-brew cask install java7
+echo  "Installaling Java"
+brew cask install java
 
 
 
