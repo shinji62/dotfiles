@@ -50,7 +50,7 @@ export PATH=$PATH:$GOROOT/bin
 
 if [ -d ~/.gvm ]; then
   source "$HOME/.gvm/scripts/gvm"
-  gvm use 1.6.2
+  gvm use 1.9.2
 fi
 
 
@@ -116,3 +116,14 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 # direnv
 # ------------------------------------
 eval "$(direnv hook zsh)"
+
+
+
+
+
+# -------------------------
+# Python  local
+# -------------------------
+if [[ -d ~/.local ]]; then
+   export PATH=$HOME/.local/bin:$PATH
+fi

@@ -4,6 +4,7 @@
 [user]
   name = Etourneau Gwenn
   email = gwenn.etourneau@gmail.com
+	signingkey = 3F28A80B2FFC7CBD
 
 [credential]
   helper = osxkeychain          
