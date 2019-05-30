@@ -3,17 +3,17 @@
 # ====================================
 
 # show with color
-alias ls="ls --color"
+alias ls="ls -G"
 
 # show description of files
-alias ll="ls -l --color"
+alias ll="ls -lG"
 
 # show with hidden files
-alias la="ls -A --color"
+alias la="ls -AG"
 
 # show directory with /, executable file with *,
 # simbolic link with @
-alias lf="ls -F --color"
+alias lf="ls -FG"
 
 # ------------------------------------
 # Rmtrash

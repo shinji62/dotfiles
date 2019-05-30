@@ -18,8 +18,8 @@ fi
 
 # Add Repository
 brew tap homebrew/dupes
-brew tap homebrew/versions   
-brew tap homebrew/binary     
+brew tap homebrew/versions
+brew tap homebrew/binary
 brew tap thoughtbot/formulae
 brew tap caskroom/fonts
 brew tap caskroom/versions
@@ -37,7 +37,7 @@ packages=(
     # recent versions of some OS X tools
     homebrew/dupes/grep
     #apple-gcc42
-    
+
     # Shell
     zsh
     bash
@@ -45,51 +45,54 @@ packages=(
 
     # Multiplexe
     tmux
-    reattach-to-user-namespace 
+    reattach-to-user-namespace
 
     # Git
-    git   
-    hub   
-    gitsh 
-    gist  
+    git
+    hub
+    gitsh
+    gist
     tig
 
     # Image
-    imagemagick 
+    imagemagick
 
     # Utils
     autoconf
-    proctools 
-    automake  
-    rmtrash       
-    wget      
-    curl          
-    tree      
-    openssl   
-    libyaml   
-    readline  
-    markdown  
-    nkf       
+    proctools
+    automake
+    rmtrash
+    wget
+    curl
+    tree
+    openssl
+    libyaml
+    readline
+    markdown
+    nkf
     ag
     direnv
 
     # Languages
-    rbenv            
-    ruby-build       
-    go               
+    rbenv
+    ruby-build
+    go
     python3
     ghc
-    scala      
+    scala
 
     #Database
     mysql
-    postgres    
+    postgres
 
     #CF
-    spiff      
+    spiff
 
     #Java
     jenv
+
+    #Kubernetes
+    kubernetes-cli
 )
 
 echo "installing binaries..."
@@ -109,12 +112,12 @@ apps=(
 
     # Terminal
     iterm2
-    
+
     # Communication
     slack
     skype
 
-    # VM    
+    # VM
     virtualbox
     vagrant
     vagrant-manager
@@ -149,6 +152,3 @@ brew cask install ${fonts[@]}
 
 echo  "Installaling Java"
 brew cask install java
-
-
-

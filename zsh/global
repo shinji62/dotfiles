@@ -42,11 +42,6 @@ fi
 export GOPATH=${HOME}
 export PATH=$PATH:~/bin
 
-# For godoc
-export GOROOT=`go env GOROOT`
-export PATH=$PATH:$GOROOT/bin
-
-
 
 if [ -d ~/.gvm ]; then
   source "$HOME/.gvm/scripts/gvm"
@@ -127,3 +122,7 @@ eval "$(direnv hook zsh)"
 if [[ -d ~/.local ]]; then
    export PATH=$HOME/.local/bin:$PATH
 fi
+
+# For godoc
+export GOROOT=`go env GOROOT`
+export PATH=$PATH:$GOROOT/bin
